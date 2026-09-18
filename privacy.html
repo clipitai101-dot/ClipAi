@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; ViralClip AI</title>
+<meta name="description" content="What ViralClip AI stores, what it sends elsewhere, and how to revoke its access.">
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f6f7f9; --border: #e2e5ea;
+    --text: #15181d; --muted: #5c6470; --accent: #2f6df6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216; --surface: #171b21; --border: #262c35;
+      --text: #e8ebef; --muted: #98a1ae; --accent: #6e9bff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 16px 96px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.1rem; margin: 36px 0 8px; letter-spacing: -0.01em; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 32px; }
+  ul { padding-left: 22px; }
+  li { margin: 7px 0; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px 20px; margin: 22px 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.9rem;
+  }
+  a { color: var(--accent); }
+  code {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 4px; padding: 1px 5px; font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">ViralClip AI &middot; last updated 18 September 2026</p>
+
+  <p>
+    ViralClip AI is a self-hosted tool. It runs on the operator's own computer and
+    there is no ViralClip AI server, no hosted account and no other user. This
+    policy describes what the software stores on that computer and the specific
+    cases where data is sent to a third party.
+  </p>
+
+  <h2>What is stored, and where</h2>
+  <p>
+    Everything below is stored locally on the computer running the app. None of it
+    is transmitted to the developer, and there is no remote backup.
+  </p>
+  <ul>
+    <li><strong>Google account access.</strong> The access and refresh tokens
+        issued when you connect a YouTube account, kept in a local database and
+        encrypted at rest.</li>
+    <li><strong>Your channel name.</strong> Read once when you connect, so the app
+        can show you which account is connected.</li>
+    <li><strong>Video and clip files.</strong> Sources downloaded for processing
+        and the clips cut from them, in a folder on the local disk.</li>
+    <li><strong>Transcripts and metadata.</strong> Titles, creators, durations,
+        view counts, transcripts and Twitch chat activity for the videos you
+        process.</li>
+    <li><strong>Your own decisions.</strong> Which clips you kept or dropped, and
+        the view, like and comment counts of clips already uploaded &mdash; this is
+        what the app learns from.</li>
+  </ul>
+
+  <h2>What leaves your computer</h2>
+  <div class="card">
+    <p>Three destinations, and nothing else.</p>
+    <ul>
+      <li><strong>Anthropic</strong> &mdash; video transcripts, titles and chat
+          summaries are sent to the Claude API so it can suggest which moments to
+          clip and write titles and descriptions. This is the one case where the
+          content of your videos leaves the machine. Anthropic's handling of that
+          text is governed by their own terms; it is not used to train models on
+          API traffic.</li>
+      <li><strong>Google / YouTube</strong> &mdash; the clip file, its title and
+          description on upload, and requests for the view counts of clips already
+          uploaded.</li>
+      <li><strong>Twitch and YouTube, as a viewer</strong> &mdash; ordinary public
+          requests to fetch a video, its metadata and its chat replay.</li>
+    </ul>
+    <p>
+      There is no analytics, no tracking, no advertising and no third-party script
+      of any kind. Nothing is sold or shared with anyone else.
+    </p>
+  </div>
+
+  <h2>How Google user data is used</h2>
+  <p>
+    ViralClip AI's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google
+    API Services User Data Policy</a>, including the Limited Use requirements.
+    Specifically:
+  </p>
+  <ul>
+    <li><code>youtube.upload</code> is used only to upload clips you have approved
+        to your own channel.</li>
+    <li><code>youtube.readonly</code> is used only to read the public statistics of
+        videos the app itself uploaded, and your channel name at connection time.</li>
+    <li>Google user data is never transferred to anyone, never used for
+        advertising, and never read by a human.</li>
+    <li>Google user data is not sent to the Claude API. What is sent there is video
+        transcripts and titles, which come from the video files themselves.</li>
+  </ul>
+
+  <h2>Deleting your data, and revoking access</h2>
+  <ul>
+    <li>Disconnecting an account in the app deletes its stored tokens immediately.</li>
+    <li>You can revoke access at any time from
+        <a href="https://myaccount.google.com/permissions" rel="noopener">your Google
+        account permissions page</a>, which works whether or not the app is running.</li>
+    <li>Deleting the app's folder and its database removes everything else. There is
+        no copy anywhere for the developer to delete on your behalf.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>
+    ViralClip AI is a tool for a channel operator and is not directed at children
+    under 13. It collects nothing from anyone other than the person running it.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the date at the top changes with it. Because the
+    software is self-hosted, an older installed copy keeps behaving the way it did
+    when it was installed.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: <strong>gal.mikulic14@gmail.com</strong>
+  </p>
+
+  <footer>
+    <p><a href="./index.html">Home</a> &middot; <a href="./terms.html">Terms of service</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
