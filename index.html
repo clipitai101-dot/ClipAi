@@ -51,8 +51,8 @@
   <h1>ViralClip AI</h1>
   <p class="lede">
     A self-hosted tool that finds the clippable moments in long YouTube and Twitch
-    videos, cuts them into vertical clips, and uploads them to your own YouTube
-    channel.
+    videos, cuts them into vertical clips, and posts them to your own YouTube
+    channel and TikTok account.
   </p>
 
   <p class="card">
@@ -60,7 +60,8 @@
     <a href="./privacy.html">Privacy policy</a> &middot;
     <a href="./terms.html">Terms of service</a> &middot;
     <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a> &middot;
-    <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>
+    <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> &middot;
+    <a href="https://www.tiktok.com/legal/terms-of-service" rel="noopener">TikTok Terms of Service</a>
   </p>
 
   <h2>What it does</h2>
@@ -70,8 +71,9 @@
         to find the moments people reacted to.</li>
     <li>It suggests clips with a timestamp, a score and a reason for each.</li>
     <li>You review them, keep the ones you like and drop the rest.</li>
-    <li>It cuts the keepers to vertical, writes a title and description, and uploads
-        them to your YouTube channel.</li>
+    <li>It cuts the keepers to vertical, writes a title and description, and &mdash;
+        when you press Post or schedule it &mdash; uploads them to your YouTube channel
+        and/or your TikTok account.</li>
   </ol>
   <p>
     It learns from your keeps and drops over time &mdash; both which videos tend to
@@ -81,8 +83,8 @@
   <h2>Who it is for</h2>
   <p>
     One person: the operator running it. ViralClip AI is not a hosted service and
-    has no public sign-up. It runs on the operator's own computer, uploads only to
-    the operator's own YouTube channel, and has no other users.
+    has no public sign-up. It runs on the operator's own computer, posts only to
+    the operator's own YouTube channel and TikTok account, and has no other users.
   </p>
 
   <h2>Why it asks for YouTube access</h2>
@@ -98,8 +100,28 @@
           counts on clips it uploaded, so it can tell which ones did well.</li>
     </ul>
     <p>
-      It never reads anyone else's private data, never changes your channel
-      settings, and never deletes anything.
+      It also asks to read YouTube Analytics for clips it uploaded (how much of each
+      clip people watched), and to delete a clip it uploaded &mdash; only when you take
+      that clip off the channel yourself in the app. It never reads anyone else's
+      private data and never changes your channel settings.
+    </p>
+  </div>
+
+  <h2>Why it asks for TikTok access</h2>
+  <div class="card">
+    <p>Connecting a TikTok account grants three permissions:</p>
+    <ul>
+      <li><code>user.info.basic</code> &mdash; to read your TikTok display name, so the
+          app can show which account is connected.</li>
+      <li><code>video.publish</code> &mdash; to post a clip you approved to your own
+          TikTok account, with the privacy setting you chose.</li>
+      <li><code>video.upload</code> &mdash; to send a clip you approved to your TikTok
+          inbox as a draft, so you can finish and post it in the TikTok app.</li>
+    </ul>
+    <p>
+      Nothing is posted without you approving that clip and pressing Post (or
+      scheduling it). The app never reads your other videos, messages, followers or
+      any other TikTok data.
     </p>
   </div>
 
@@ -123,7 +145,8 @@
       <a href="./privacy.html">Privacy policy</a> &middot;
       <a href="./terms.html">Terms of service</a>
     </p>
-    <p>ViralClip AI uses YouTube API Services. It is not made or endorsed by YouTube or Google.</p>
+    <p>ViralClip AI uses YouTube API Services and the TikTok Content Posting API. It is not
+       made or endorsed by YouTube, Google or TikTok.</p>
     <p>Contact: clip.it.ai101@gmail.com</p>
   </footer>
 
